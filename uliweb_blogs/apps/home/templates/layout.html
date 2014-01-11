@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<title>{{=settings.HOME.title}}</title>
+</head>
+{{use "semantic"}}
+{{link "home.css"}}
+
+<body>
+<!-- Header -->
+<div class="ui page grid" id="introduction">
+    <div class="column">
+        <h1 class="ui header">{{=settings.HOME.name}}
+            <h2 class="sub header">{{=settings.HOME.description}}</h2>
+        </h1>
+        <form action="http://www.google.com/search" method="GET">
+            <input name="sitesearch" value="{{=settings.HOME.site}}" type="hidden">
+            <input id="search_bar" name="q" type="text" placeholder="Search..."></input>
+        </form>
+    </div>
+</div>
+
+<!-- Menus -->
+<div class="ui page grid" id="menus">
+    <div class="ui blue inverted menu">
+        <a href="/" class="item">Home</a>
+        <a href="/about" class="item">About</a>
+    </div>
+</div>
+
+<!-- CONTENT -->
+{{block content_container}}
+<div class="ui page grid">
+    <div class="ui divided grid" id="blogs">
+        <div class="twelve wide column">
+            {{block content}}
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            {{end}}
+        </div> 
+        
+        <div class="four wide column">
+            {{block sidebar}}
+            <p>SideBar</p>
+            <p>SideBar</p>
+            <p>SideBar</p>
+            <p>SideBar</p>
+            <p>SideBar</p>
+            <p>SideBar</p>
+            {{end}}
+        </div>
+    </div>
+</div>
+{{end}}
+
+<!-- FOOTER -->
+<div class="ui page grid" id="footer">
+    <div class="column">
+        <div class="ui two column stackable grid">
+          <div class="column">
+            <div class="ui header">Links</div>
+            <div class="ui inverted link list">
+              <a target="_blank" class="item" href="http://github.com/limodou/uliweb-blogs-demo">Uliweb Blogs Demo</a>
+              <a target="_blank" class="item" href="http://github.com/limodou/uliweb">Uliweb Project</a>
+              <a target="_blank" class="item" href="http://github.com/limodou/plugs">Plugs Project</a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui header">Contact</div>
+            <div class="ui inverted link list">
+              <a target="_blank" class="item" href="mailto:limodou@gmail.com">Designed by Limodou</a>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

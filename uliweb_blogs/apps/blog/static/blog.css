@@ -1,0 +1,53 @@
+html, body {margin:0;height:100%;padding:0;background-color:whitesmoke;}
+
+#introduction {background-color:#263346;position:relative;}
+#introduction h1 {font-size:4em;color:white;}
+#introduction h2 {
+font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+color:#CCE2FF;;
+font-weight: normal;
+margin: -10px 0 16px 0px;
+font-size: 1.75em;
+border-bottom: none;
+line-height: 1;
+}
+#footer {background-color:#00b5ae;color:white;}
+#footer a{text-decoration:none;color: rgba(255, 255, 255, 0.6);}
+#footer a:hover{text-decoration:underline;color:#f5a615;}
+#menus {background-color:#6ECFF5;}
+
+#blogs {background-color:white;}
+#search_bar {position:absolute; right:20px; bottom: 10px;border:1px solid #999;
+padding:4px;height:20px;} 
+.footer {text-align:center;}
+.blog-body {position:relative;padding-left:80px;}
+.blog-content a.anchor {color:white;text-decoration:none;}
+.blog-content pre {background-color:whitesmoke;font-size:1em;padding:4px;border-left:4px solid brown;overflow:auto;}
+.blog-content img {max-width:100%;}
+.blog h2.ui.header {margin-top:0.5em;}
+.blog h2.ui.header a {color:black;text-decoration:none;}
+.blog h2.ui.header a:hover {text-decoration:underline;}
+/* dateinfo */
+.blog p.dateinfo {
+position:absolute;
+left:0px;
+top:5px;
+background: url(/static/blog/date-bg.gif) no-repeat;
+height: 83px;
+width: 64px;
+padding: 8px 0 0 1px;
+font: bold 15px Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+text-align: center;
+letter-spacing: 2px;
+color: #fff;
+margin:0;
+}
+.blog p.dateinfo span {
+font: bold 30px Arial, Helvetica, sans-serif;
+display: block;
+color: #555;
+margin: 8px 0 0 0;
+padding: 0;
+letter-spacing: 0;
+}
